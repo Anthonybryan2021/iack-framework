@@ -1,26 +1,10 @@
-﻿import ast
-import subprocess
-import sys
-import unittest
-from pathlib import Path
+﻿import unittest
+from src.metrics import compute_iack_metrics
 
 
 class TestMetricsPrototype(unittest.TestCase):
-    def test_metrics_script_outputs_expected_keys(self):
-        repo_root = Path(__file__).resolve().parents[1]
-        script = repo_root / "src" / "metrics.py"
-
-        result = subprocess.run(
-            [sys.executable, str(script)],
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-
-        output = result.stdout.strip()
-        self.assertTrue(output, "metrics.py did not print any output")
-
-        data = ast.literal_eval(output)
+    def test_compute_iack_metrics_outputs_expected_keys(self):
+        data = compute_iack_metrics()
 
         self.assertIsInstance(data, dict)
         self.assertIn("integrity", data)
@@ -29,19 +13,17 @@ class TestMetricsPrototype(unittest.TestCase):
         self.assertIn("windowed_efficiency", data)
 
     def test_metric_values_are_numeric(self):
-        repo_root = Path(__file__).resolve().parents[1]
-        script = repo_root / "src" / "metrics.py"
-
-        result = subprocess.run(
-            [sys.executable, str(script)],
-            capture_output=True,
-            text=True,
-            check=True,
-        )
-
-        data = ast.literal_eval(result.stdout.strip())
+        data = compute_iack_metrics()
 
         self.assertIsInstance(data["integrity"], (int, float))
         self.assertIsInstance(data["availability"], (int, float))
         self.assertIsInstance(data["confidentiality_proxy"], (int, float))
         self.assertIsInstance(data["windowed_efficiency"], (int, float))
+
+    def test_invalid_total_events_raises_error(self):
+        with self.assertRaises(ValueError):
+            compute_iack_metrics(total_events=0)
+
+    def test_invalid_window_size_raises_error(self):
+        with self.assertRaises(ValueError):
+            compute_iack_metrics(window_size=0)
