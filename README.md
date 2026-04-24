@@ -24,6 +24,19 @@ The current conceptual model uses four core outputs:
 - **Windowed efficiency** — a time-based measure of how consistently the system preserves the confidentiality proxy across a defined interval. [file:396]
 
 This framing is meant as a prototype foundation rather than a finished security model. The formulas, assumptions, and operational definitions will evolve as the project matures. [file:396]
+## Project Principles
+
+The I-A-C-K Framework is guided by a set of principles intended to keep the project scientifically credible, ethically grounded, and practically relevant.
+
+- **Transparency** — openly document assumptions, methodologies, and data sources.
+- **Reproducibility** — validate the framework through reproducible experiments, testing, and peer-oriented review.
+- **Ethical AI** — prioritize fairness, accountability, and respect for privacy in AI-assisted security analysis.
+- **Open collaboration** — encourage constructive feedback and diverse perspectives from researchers, practitioners, and contributors.
+- **Standards alignment** — aim to align the framework with recognized cybersecurity practices and quantum-safe security considerations.
+- **Iterative improvement** — refine the model continuously as evidence, threats, and technologies evolve.
+- **Honest communication** — clearly state the framework’s current capabilities, assumptions, and limitations.
+
+These principles are intended to help ensure that the project develops as a trustworthy research and prototype effort rather than only as a technical experiment.
 
 ## Repository Structure
 
