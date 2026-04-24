@@ -1,58 +1,124 @@
 # I-A-C-K Framework
 
-The I-A-C-K framework is a mathematical and AI-driven model for real-time confidentiality proxy measurement in quantum-safe cybersecurity systems.
+The I-A-C-K Framework is a mathematical and AI-assisted research prototype for real-time confidentiality proxy measurement in cybersecurity systems. It explores how operational security signals can be combined into a practical, measurable proxy for confidentiality when direct measurement is difficult or impossible. [file:396]
 
-## Purpose
+## Overview
 
-This repository is the working space for a research and prototype effort focused on:
-- measuring confidentiality in real time,
-- modeling security-state changes with operational signals,
-- and exploring AI-assisted forecasting and anomaly detection for cybersecurity defense.
+This repository is the working space for an early-stage framework focused on:
 
-## Core Idea
+- measuring confidentiality through indirect but observable system behavior,
+- modeling security-state changes using integrity and availability indicators,
+- and supporting future AI-assisted forecasting, anomaly detection, and decision support for cyber defense. [file:396]
 
-The framework defines a confidentiality proxy using integrity and availability signals:
+The current implementation is intentionally lightweight. It provides a baseline structure for the project, a starter metrics module, and a first set of unit tests that establish an initial testing foundation for future development. [file:396][file:509]
 
-- **Integrity**: breach events, modification attempts, and hash validation failures
-- **Availability**: uptime, authentication success, and response stability
-- **Confidentiality proxy**: a derived score based on integrity and availability
-- **Efficiency**: a time-windowed measure of how consistently the system preserves the confidentiality proxy
+## Core Concept
 
-## Current Status
+The framework treats confidentiality as a derived security property that can be approximated through related operational signals.
 
-This repository currently contains:
-- the initial project structure,
-- a starter metric computation module,
-- and a working draft of the framework summary.
+The current conceptual model uses four core outputs:
+
+- **Integrity** — signals related to trustworthiness of data and system state, such as breach events, modification attempts, or validation failures. [file:396]
+- **Availability** — signals related to system reliability and accessibility, such as uptime, authentication success, and response stability. [file:396]
+- **Confidentiality proxy** — a derived score based on the relationship between integrity and availability indicators. [file:396]
+- **Windowed efficiency** — a time-based measure of how consistently the system preserves the confidentiality proxy across a defined interval. [file:396]
+
+This framing is meant as a prototype foundation rather than a finished security model. The formulas, assumptions, and operational definitions will evolve as the project matures. [file:396]
 
 ## Repository Structure
 
-- `docs/` — project notes and summaries
-- `src/` — source code for the framework
-- `notebooks/` — exploratory analysis and prototypes
-- `diagrams/` — architecture and concept diagrams
-- `references/` — source material and research notes
+The repository currently centers on these main areas:
 
-## Running the Prototype
+- `docs/` — project notes, summaries, and supporting writeups.
+- `src/` — source code for the prototype framework and metric computations.
+- `tests/` — baseline unit tests for the starter metrics module. [file:509]
 
-The starter implementation is in `src/metrics.py`.
+If additional research folders such as notebooks, diagrams, or references are added later, they can be documented here once they are present in the repository structure. [file:396][file:510]
 
-If Python is installed, you can run it with:
+## Current Status
+
+At this stage, the repository contains:
+
+- the initial project structure,
+- a starter metric computation module in `src/metrics.py`,
+- a working draft of the framework description,
+- and passing unit tests for the baseline metrics prototype. [file:396][file:509]
+
+The current metrics implementation exposes a `compute_iack_metrics()` function that returns a dictionary with the framework’s baseline outputs. The present version should be treated as a scaffold for further research, refinement, and validation rather than a production-ready security engine. [file:507][file:509]
+
+## Getting Started
+
+### Requirements
+
+- Python 3.x
+- A local environment capable of running standard library `unittest` tests
+
+### Run the tests
+
+From the repository root, run:
 
 ```powershell
-python .\src\metrics.py
+python -m unittest discover -s tests -v
 ```
 
-That will print a sample output dictionary with the computed integrity, availability, confidentiality proxy, and windowed efficiency values.
+The current baseline test suite checks that the starter metrics function:
+
+- returns the expected keys,
+- returns numeric values,
+- raises an error for invalid `total_events`,
+- and raises an error for invalid `window_size`. [file:509]
+
+## Prototype Usage
+
+The starter implementation lives in:
+
+```text
+src/metrics.py
+```
+
+The current baseline interface is centered on:
+
+```python
+compute_iack_metrics(total_events=1, window_size=1)
+```
+
+It returns a dictionary with the following keys:
+
+- `integrity`
+- `availability`
+- `confidentiality_proxy`
+- `windowed_efficiency` [file:507]
+
+Example:
+
+```python
+from src.metrics import compute_iack_metrics
+
+result = compute_iack_metrics()
+print(result)
+```
 
 ## Roadmap
 
 Planned next steps include:
-- expanding the metric definitions,
-- adding tests,
-- building a notebook for experimentation,
-- and validating the framework against synthetic and real-world security logs.
+
+- expanding the metric definitions beyond placeholder values,
+- introducing more realistic confidentiality proxy logic,
+- adding richer test coverage for edge cases and expected ranges,
+- building notebooks or experiments for model exploration,
+- and validating the framework against synthetic and real-world security telemetry. [file:396][file:509]
+
+## Research Direction
+
+This repository is best understood as a research and prototyping effort at the intersection of:
+
+- cybersecurity measurement,
+- mathematical security modeling,
+- operational telemetry,
+- and AI-assisted analysis. [file:396]
+
+As the framework evolves, future work may include better event modeling, weighted scoring, time-series analysis, anomaly detection, and domain validation against real security workflows. [file:396]
 
 ## License
 
-This project is released under the MIT License.
+This project is released under the MIT License. [file:396]
