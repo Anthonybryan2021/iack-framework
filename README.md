@@ -1,4 +1,7 @@
-# I-A-C-K Framework
+﻿# I-A-C-K Framework
+
+[![Tests](https://github.com/Anthonybryan2021/iack-framework/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/Anthonybryan2021/iack-framework/actions/workflows/tests.yml)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 The I-A-C-K Framework is a mathematical and AI-assisted research prototype for real-time confidentiality proxy measurement in cybersecurity systems. It explores how operational security signals can be combined into a practical, measurable proxy for confidentiality when direct measurement is difficult or impossible. [file:396]
 
@@ -18,23 +21,23 @@ The framework treats confidentiality as a derived security property that can be 
 
 The current conceptual model uses four core outputs:
 
-- **Integrity** — signals related to trustworthiness of data and system state, such as breach events, modification attempts, or validation failures. [file:396]
-- **Availability** — signals related to system reliability and accessibility, such as uptime, authentication success, and response stability. [file:396]
-- **Confidentiality proxy** — a derived score based on the relationship between integrity and availability indicators. [file:396]
-- **Windowed efficiency** — a time-based measure of how consistently the system preserves the confidentiality proxy across a defined interval. [file:396]
+- **Integrity** â€” signals related to trustworthiness of data and system state, such as breach events, modification attempts, or validation failures. [file:396]
+- **Availability** â€” signals related to system reliability and accessibility, such as uptime, authentication success, and response stability. [file:396]
+- **Confidentiality proxy** â€” a derived score based on the relationship between integrity and availability indicators. [file:396]
+- **Windowed efficiency** â€” a time-based measure of how consistently the system preserves the confidentiality proxy across a defined interval. [file:396]
 
 This framing is meant as a prototype foundation rather than a finished security model. The formulas, assumptions, and operational definitions will evolve as the project matures. [file:396]
 ## Project Principles
 
 The I-A-C-K Framework is guided by a set of principles intended to keep the project scientifically credible, ethically grounded, and practically relevant.
 
-- **Transparency** — openly document assumptions, methodologies, and data sources.
-- **Reproducibility** — validate the framework through reproducible experiments, testing, and peer-oriented review.
-- **Ethical AI** — prioritize fairness, accountability, and respect for privacy in AI-assisted security analysis.
-- **Open collaboration** — encourage constructive feedback and diverse perspectives from researchers, practitioners, and contributors.
-- **Standards alignment** — aim to align the framework with recognized cybersecurity practices and quantum-safe security considerations.
-- **Iterative improvement** — refine the model continuously as evidence, threats, and technologies evolve.
-- **Honest communication** — clearly state the framework’s current capabilities, assumptions, and limitations.
+- **Transparency** â€” openly document assumptions, methodologies, and data sources.
+- **Reproducibility** â€” validate the framework through reproducible experiments, testing, and peer-oriented review.
+- **Ethical AI** â€” prioritize fairness, accountability, and respect for privacy in AI-assisted security analysis.
+- **Open collaboration** â€” encourage constructive feedback and diverse perspectives from researchers, practitioners, and contributors.
+- **Standards alignment** â€” aim to align the framework with recognized cybersecurity practices and quantum-safe security considerations.
+- **Iterative improvement** â€” refine the model continuously as evidence, threats, and technologies evolve.
+- **Honest communication** â€” clearly state the frameworkâ€™s current capabilities, assumptions, and limitations.
 
 These principles are intended to help ensure that the project develops as a trustworthy research and prototype effort rather than only as a technical experiment.
 
@@ -42,9 +45,9 @@ These principles are intended to help ensure that the project develops as a trus
 
 The repository currently centers on these main areas:
 
-- `docs/` — project notes, summaries, and supporting writeups.
-- `src/` — source code for the prototype framework and metric computations.
-- `tests/` — baseline unit tests for the starter metrics module. [file:509]
+- `docs/` â€” project notes, summaries, and supporting writeups.
+- `src/` â€” source code for the prototype framework and metric computations.
+- `tests/` â€” baseline unit tests for the starter metrics module. [file:509]
 
 If additional research folders such as notebooks, diagrams, or references are added later, they can be documented here once they are present in the repository structure. [file:396][file:510]
 
@@ -57,7 +60,7 @@ At this stage, the repository contains:
 - a working draft of the framework description,
 - and passing unit tests for the baseline metrics prototype. [file:396][file:509]
 
-The current metrics implementation exposes a `compute_iack_metrics()` function that returns a dictionary with the framework’s baseline outputs. The present version should be treated as a scaffold for further research, refinement, and validation rather than a production-ready security engine. [file:507][file:509]
+The current metrics implementation exposes a `compute_iack_metrics()` function that returns a dictionary with the frameworkâ€™s baseline outputs. The present version should be treated as a scaffold for further research, refinement, and validation rather than a production-ready security engine. [file:507][file:509]
 
 ## Getting Started
 
@@ -157,3 +160,4 @@ GitHub Actions runs the test suite automatically on:
 ### Notes
 
 At the moment, this repository does not use `requirements.txt`, `pyproject.toml`, or `setup.py`, so tests run directly against the source tree.
+
