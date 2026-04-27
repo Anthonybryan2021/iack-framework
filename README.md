@@ -135,3 +135,25 @@ As the framework evolves, future work may include better event modeling, weighte
 ## License
 
 This project is released under the MIT License. [file:396]
+
+## Development
+
+### Local testing
+
+This project uses `pytest` for automated tests.
+
+Run the test suite locally with:
+
+```powershell
+python -m pytest -q
+```
+
+### Continuous integration
+
+GitHub Actions runs the test suite automatically on:
+- pushes to `main`
+- pull requests targeting `main`
+
+### Notes
+
+At the moment, this repository does not use `requirements.txt`, `pyproject.toml`, or `setup.py`, so tests run directly against the source tree.
