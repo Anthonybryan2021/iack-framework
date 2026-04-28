@@ -161,3 +161,27 @@ GitHub Actions runs the test suite automatically on:
 
 At the moment, this repository does not use `requirements.txt`, `pyproject.toml`, or `setup.py`, so tests run directly against the source tree.
 
+
+## Project Status
+
+**Status:** Active research prototype
+
+This repository is currently in an active research and development phase. Current work is focused on documentation, baseline testing, workflow stability, and framework refinement while the project is being positioned for academic review and potential collaboration.
+
+Development is continuing at a measured pace. Major feature expansion is being paced intentionally so the framework can stay aligned with research goals, validation needs, and external academic feedback.
+
+### Current Focus
+
+- Strengthening documentation and project clarity for external reviewers
+- Maintaining baseline tests and continuous integration health
+- Refining research framing, roadmap items, and evaluation direction
+- Preparing the project for academic discussion, validation, and collaboration
+
+### What This Means
+
+The repository should be viewed as a working research prototype rather than a finished product. It is stable enough to review, discuss, and validate, while still early enough for research partners to help shape methodology, experiments, and future direction.
+
+### Collaboration Note
+
+Academic interest is especially relevant for this project because it sits at the intersection of cybersecurity measurement, mathematical security modeling, operational telemetry, and AI-assisted analysis. Collaboration can help validate assumptions, improve experimental design, and strengthen the path toward publication or student-led research.
+
