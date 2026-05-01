@@ -5,7 +5,6 @@ from src.metrics import compute_iack_metrics
 class TestMetricsPrototype(unittest.TestCase):
     def test_compute_iack_metrics_outputs_expected_keys(self):
         data = compute_iack_metrics()
-
         self.assertIsInstance(data, dict)
         self.assertIn("integrity", data)
         self.assertIn("availability", data)
@@ -14,7 +13,6 @@ class TestMetricsPrototype(unittest.TestCase):
 
     def test_metric_values_are_numeric(self):
         data = compute_iack_metrics()
-
         self.assertIsInstance(data["integrity"], (int, float))
         self.assertIsInstance(data["availability"], (int, float))
         self.assertIsInstance(data["confidentiality_proxy"], (int, float))
@@ -27,3 +25,10 @@ class TestMetricsPrototype(unittest.TestCase):
     def test_invalid_window_size_raises_error(self):
         with self.assertRaises(ValueError):
             compute_iack_metrics(window_size=0)
+
+    def test_default_metrics_are_placeholder_ones(self):
+        data = compute_iack_metrics()
+        self.assertEqual(data["integrity"], 1.0)
+        self.assertEqual(data["availability"], 1.0)
+        self.assertEqual(data["confidentiality_proxy"], 1.0)
+        self.assertEqual(data["windowed_efficiency"], 1.0)
