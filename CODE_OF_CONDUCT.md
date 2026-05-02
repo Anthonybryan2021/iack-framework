@@ -38,7 +38,7 @@ This Code of Conduct applies within all project spaces, including GitHub issues,
 
 Instances of abusive, harassing, or otherwise unacceptable behavior may be reported privately to:
 
-security@example.com
+Felixcepeda@icloud.com
 
 Please do not report Code of Conduct issues through public GitHub issues.
 

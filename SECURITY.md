@@ -2,7 +2,7 @@
 
 ## Supported Versions
 
-The I-A-C-K Framework is an early-stage research and prototype project. Security support applies to the current main branch and the latest published revision.
+The I-A-C-K Framework is an early-stage research and prototype project. Security support applies to the current `main` branch and the latest published revision.
 
 ## Reporting a Vulnerability
 
