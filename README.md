@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+ HEAD
 
 
 ## Overview
@@ -89,11 +89,11 @@ These capabilities are still foundational, but they establish an important base 
 
 IACK is being developed with a small set of guiding principles:
 
-- **Integrity** — the project should grow honestly, without overstating its maturity.
-- **Transparency** — assumptions, limitations, and status should be clearly communicated.
-- **Rectitude** — the work should remain disciplined, principled, and purposeful.
-- **Reproducibility** — metric logic and validation should be understandable and testable.
-- **Collaboration** — the framework should become easier for serious contributors to review, improve, and extend.
+- **Integrity** â€” the project should grow honestly, without overstating its maturity.
+- **Transparency** â€” assumptions, limitations, and status should be clearly communicated.
+- **Rectitude** â€” the work should remain disciplined, principled, and purposeful.
+- **Reproducibility** â€” metric logic and validation should be understandable and testable.
+- **Collaboration** â€” the framework should become easier for serious contributors to review, improve, and extend.
 
 ## Repository Structure
 
@@ -104,17 +104,17 @@ A typical current layout includes:
 ```text
 iack-framework/
 +-- src/
-¦   +-- metrics.py
+Â¦   +-- metrics.py
 +-- tests/
-¦   +-- test_metrics.py
+Â¦   +-- test_metrics.py
 +-- README.md
 +-- ...
 ```
 
 Key areas:
-- `src/` — source code for the framework
-- `tests/` — unit tests and validation logic
-- `README.md` — project overview, status, and collaboration entry point
+- `src/` â€” source code for the framework
+- `tests/` â€” unit tests and validation logic
+- `README.md` â€” project overview, status, and collaboration entry point
 
 As the project grows, this structure may expand to include architecture notes, roadmap files, contribution guides, documentation, and CI workflows.
 
@@ -156,19 +156,19 @@ This approach is intentional. The goal is not to move quickly at the expense of 
 
 The roadmap is still evolving, but the current direction can be understood in three phases.
 
-### Phase 1 — Foundation
+### Phase 1 â€” Foundation
 - clarify repository structure,
 - strengthen README and project documentation,
 - validate baseline metric behavior,
 - and establish a more consistent development workflow.
 
-### Phase 2 — Architecture and Validation
+### Phase 2 â€” Architecture and Validation
 - define a clearer architectural model for IACK,
 - expand metrics design and validation logic,
 - improve testing coverage,
 - and introduce CI support for automated test execution.
 
-### Phase 3 — Collaboration and Research Maturity
+### Phase 3 â€” Collaboration and Research Maturity
 - prepare the repository for broader technical and academic collaboration,
 - improve documentation for contributors,
 - explore stronger experimental and analytical grounding,
@@ -193,7 +193,7 @@ If you are interested in contributing:
 2. Open an issue or start a discussion around a concrete suggestion.
 3. Fork the repository or work from a branch if collaboration access is granted.
 4. Submit focused pull requests with clear explanations.
-5. Keep changes aligned with the project’s technical and ethical direction.
+5. Keep changes aligned with the projectâ€™s technical and ethical direction.
 
 As the repository matures, contribution guidelines will become more formalized in a dedicated `CONTRIBUTING.md` file.
 
@@ -216,7 +216,7 @@ That means:
 - the architecture is still evolving,
 - metric design is still being refined,
 - current outputs may include placeholder values,
-- and documentation is still catching up with the project’s intended direction.
+- and documentation is still catching up with the projectâ€™s intended direction.
 
 These limitations are acknowledged openly so that the framework can grow with credibility.
 
