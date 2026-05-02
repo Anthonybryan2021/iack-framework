@@ -1,6 +1,3 @@
- HEAD
-
-
 ## Overview
 
 I-A-C-K is a mathematical and AI-driven framework for real-time confidentiality proxy measurement in cybersecurity systems.
