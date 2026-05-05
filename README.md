@@ -1,4 +1,3 @@
-<
 ## Overview
 
 IACK is a mathematical and AI-driven framework for real-time confidentiality proxy measurement in cybersecurity systems. The project is being developed as a technical and academic initiative rather than a finished product. Its purpose is to evolve into a serious framework for measurable security analysis, with emphasis on clarity, reproducibility, integrity, and long-term research value.
