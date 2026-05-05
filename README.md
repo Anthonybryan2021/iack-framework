@@ -1,54 +1,4 @@
-## Overview
 
-IACK is a mathematical and AI-driven framework for real-time confidentiality proxy measurement in cybersecurity systems. The project is being developed as a technical and academic initiative rather than a finished product. Its purpose is to evolve into a serious framework for measurable security analysis, with emphasis on clarity, reproducibility, integrity, and long-term research value.
-
-At its current stage, IACK is in foundation-building mode. The repository includes early project structure, initial metric logic, and validation work that is intended to support future architectural growth, technical refinement, and academic collaboration.
-
-## What it includes
-
-- Validation and metrics test coverage.
-- Project documentation and governance files.
-- Security policy and contribution guidance.
-- A roadmap for planned framework work.
-
-## Key references
-
-- [ROADMAP.md](./ROADMAP.md)
-- [SECURITY.md](./SECURITY.md)
-- [CONTRIBUTING.md](./CONTRIBUTING.md)
-- [LICENSE](./LICENSE)
-
-## Architecture
-
-```mermaid
-graph TD
-    A[I-A-C-K Framework] --> B[Validation Layer]
-    A --> C[Metrics Engine]
-    A --> D[Reporting Layer]
-    A --> E[Security & Policy Docs]
-    B --> F[Tests]
-    C --> F
-    D --> G[README / ROADMAP]
-    E --> H[SECURITY.md / CONTRIBUTING.md]
-```
-
-
-## Project Vision
-
-The vision of IACK is to build a framework that can support disciplined work around security metrics in a way that is technically meaningful and academically useful. Rather than presenting broad claims too early, IACK is being developed step by step as a base for:
-
-- defining and refining security-oriented metrics,
-- validating how those metrics are computed,
-- structuring a framework that can mature through transparent development,
-- and creating something that may eventually contribute academic value, including for future students, researchers, and practitioners.
-
-The long-term aspiration is for IACK to become a principled and well-documented body of work that reflects integrity, rectitude, and serious technical effort.
-
-## Current Status
-
-**Project stage:** Active early-stage development
-
-At this time, IACK should be understood as an evolving framework, not a complete production-ready platform. Current repository progress includes:
 
 - early repository organization,
 - initial metrics-related code and validation logic,
@@ -73,37 +23,12 @@ These capabilities are still foundational, but they establish an important base 
 
 IACK is being developed with a small set of guiding principles:
 
-- **Integrity**: the project should grow honestly, without overstating its maturity.
-- **Transparency**: assumptions, limitations, and status should be clearly communicated.
-- **Rectitude**: the work should remain disciplined, principled, and purposeful.
-- **Reproducibility**: metric logic and validation should be understandable and testable.
-- **Collaboration**: the framework should become easier for serious contributors to review, improve, and extend.
 
-## Repository Structure
-
-> The exact structure may evolve as the project matures. A typical current layout includes:
-
-```text
-iack-framework/
-+-- src/
-|   +-- metrics.py
-+-- tests/
-|   +-- test_metrics.py
-+-- README.md
-+-- ROADMAP.md
-+-- SECURITY.md
-+-- CONTRIBUTING.md
-+-- LICENSE
 ```
 
 Key areas:
 
-- `src/` source code for the framework.
-- `tests/` unit tests and validation logic.
-- `README.md` project overview, status, and collaboration entry point.
-- `ROADMAP.md` planned development direction.
-- `SECURITY.md` security policy and reporting guidance.
-- `CONTRIBUTING.md` contribution process and collaboration workflow.
+
 
 As the project grows, this structure may expand to include architecture notes, additional documentation, and CI workflows.
 
@@ -111,7 +36,7 @@ As the project grows, this structure may expand to include architecture notes, a
 
 ### Requirements
 
-- Python 3.13 or compatible version.
+
 - Git.
 - A local clone of the repository.
 
@@ -134,11 +59,7 @@ If the tests pass, you should see the current validation suite complete successf
 
 IACK is currently being developed in a disciplined incremental manner:
 
-- define a small technical objective,
-- implement or refine the relevant logic,
-- validate behavior with tests,
-- review changes through pull requests,
-- and improve documentation as the framework becomes clearer.
+
 
 This approach is intentional. The goal is not to move quickly at the expense of rigor, but to let the framework mature in a way that remains coherent and credible.
 
@@ -148,24 +69,7 @@ The roadmap is still evolving, but the current direction can be understood in th
 
 ### Phase 1: Foundation
 
-- clarify repository structure,
-- strengthen README and project documentation,
-- validate baseline metric behavior,
-- and establish a more consistent development workflow.
 
-### Phase 2: Architecture and Validation
-
-- define a clearer architectural model for IACK,
-- expand metrics design and validation logic,
-- improve testing coverage,
-- and introduce CI support for automated test execution.
-
-### Phase 3: Collaboration and Research Maturity
-
-- prepare the repository for broader technical and academic collaboration,
-- improve documentation for contributors,
-- explore stronger experimental and analytical grounding,
-- and position the framework for more serious research-oriented development.
 
 ## Contribution Intent
 
@@ -223,6 +127,7 @@ Many security ideas are discussed at a high level, but fewer are developed in a 
 
 Although IACK is still early, part of its long-term aspiration is to become useful not only as a technical repository, but also as a piece of work with academic value. This includes the hope that it may eventually support:
 
+
 - deeper technical study,
 - clearer security-metric reasoning,
 - collaborative research discussion,
@@ -230,16 +135,8 @@ Although IACK is still early, part of its long-term aspiration is to become usef
 
 ## License
 
-This project is licensed under the Apache License 2.0. Apache 2.0 was chosen to support open collaboration, broad reuse, and clearer legal protection for contributors and downstream users, including an explicit patent grant. See the `LICENSE` file for full terms.
 
-## Contact
-
-**Felix Cepeda**  
 [felixcepeda@icloud.com](mailto:felixcepeda@icloud.com)  
 1-647-410-2397
 
 For collaboration, academic discussion, or technical feedback, please open an issue or reach out through the appropriate project contact channel.
-
----
-
-**IACK Framework** is being built patiently, seriously, and with the conviction that useful work should be clear, testable, and intellectually honest from the beginning.
