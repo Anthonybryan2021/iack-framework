@@ -1,36 +1,14 @@
 
 
-- early repository organization,
-- initial metrics-related code and validation logic,
-- unit testing for `compute_iack_metrics`,
-- pull-request-based iteration,
-- and the beginning of a more structured development workflow.
-
-This is the stage where architecture, scope, documentation, and contribution pathways are being intentionally shaped.
-
 ## Current Capabilities
 
-The repository currently supports early validation around metrics behavior, including:
-
-- returning expected keys from `compute_iack_metrics`,
-- checking that metric values are numeric,
-- validating error handling for invalid inputs,
-- and confirming placeholder default metric values through unit tests.
-
-These capabilities are still foundational, but they establish an important base for future expansion.
+The repository currently supports early validation around metrics behavior, including returning expected keys from `compute_iack_metrics`, checking that metric values are numeric, validating error handling for invalid inputs, and confirming placeholder default metric values through unit tests. These capabilities are foundational, but they establish a base for future expansion.
 
 ## Guiding Principles
 
-IACK is being developed with a small set of guiding principles:
 
 
-```
-
-Key areas:
-
-
-
-As the project grows, this structure may expand to include architecture notes, additional documentation, and CI workflows.
+As the project grows, these principles may expand into more formal architecture notes, contribution standards, and CI workflows.
 
 ## Getting Started
 
@@ -39,6 +17,7 @@ As the project grows, this structure may expand to include architecture notes, a
 
 - Git.
 - A local clone of the repository.
+- Python 3.x installed locally.
 
 ### Clone the repository
 
@@ -57,11 +36,7 @@ If the tests pass, you should see the current validation suite complete successf
 
 ## Development Approach
 
-IACK is currently being developed in a disciplined incremental manner:
 
-
-
-This approach is intentional. The goal is not to move quickly at the expense of rigor, but to let the framework mature in a way that remains coherent and credible.
 
 ## Roadmap
 
@@ -75,12 +50,12 @@ The roadmap is still evolving, but the current direction can be understood in th
 
 At this stage, meaningful contributions may include:
 
-- architectural feedback,
-- review of metric design and assumptions,
-- testing and validation improvements,
-- documentation refinement,
-- repository organization,
-- and academic or research-oriented guidance.
+- Architectural feedback.
+- Review of metric design and assumptions.
+- Testing and validation improvements.
+- Documentation refinement.
+- Repository organization.
+- Academic or research-oriented guidance.
 
 The project especially welcomes thoughtful contributors who value serious technical work, humility in framing early-stage systems, and integrity in how ideas are developed.
 
@@ -100,22 +75,22 @@ As the repository matures, contribution guidelines will become more formalized i
 
 IACK is open to serious collaboration, especially where there is alignment around:
 
-- cybersecurity research,
-- security metric design,
-- framework architecture,
-- transparent technical development,
-- and long-term academic value.
+- Cybersecurity research.
+- Security metric design.
+- Framework architecture.
+- Transparent technical development.
+- Long-term academic value.
 
-The project is particularly interested in collaboration that helps strengthen both the technical rigor and the intellectual seriousness of the framework.
+The project is particularly interested in collaboration that strengthens both the technical rigor and the intellectual seriousness of the framework.
 
 ## Limitations
 
 This repository is still early-stage. That means:
 
-- the architecture is still evolving,
-- metric design is still being refined,
-- current outputs may include placeholder values,
-- and documentation is still catching up with the project’s intended direction.
+- The architecture is still evolving.
+- Metric design is still being refined.
+- Current outputs may include placeholder values.
+- Documentation is still catching up with the project’s intended direction.
 
 These limitations are acknowledged openly so that the framework can grow with credibility.
 
@@ -125,18 +100,6 @@ Many security ideas are discussed at a high level, but fewer are developed in a 
 
 ## Academic Orientation
 
-Although IACK is still early, part of its long-term aspiration is to become useful not only as a technical repository, but also as a piece of work with academic value. This includes the hope that it may eventually support:
+Although IACK is still early, part of its long-term aspiration is to become useful not only as a technical repository, but also as work with academic value. This includes the hope that it may eventually support:
 
 
-- deeper technical study,
-- clearer security-metric reasoning,
-- collaborative research discussion,
-- and future learners or researchers who want to build on an honest and well-structured foundation.
-
-## License
-
-
-[felixcepeda@icloud.com](mailto:felixcepeda@icloud.com)  
-1-647-410-2397
-
-For collaboration, academic discussion, or technical feedback, please open an issue or reach out through the appropriate project contact channel.
