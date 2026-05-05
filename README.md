@@ -1,26 +1,4 @@
-﻿# IACK Framework
 
-IACK is an early-stage, research-oriented cybersecurity framework focused on disciplined, testable development of security metrics and related validation logic. The repository is being shaped intentionally through incremental changes, unit tests, pull-request-based iteration, and a more structured development workflow.
-
-## Architecture
-
-```mermaid
-flowchart TD
-    A[Input Data] --> B[compute_iack_metrics]
-    B --> C[Metric Outputs]
-    B --> D[Validation Logic]
-    D --> E[Invalid Input Handling]
-    C --> F[Unit Tests]
-    D --> F
-    F --> G[Pull Request Review]
-    G --> H[Updated README and Workflow]
-```
-
-This diagram reflects the current foundation: metric computation, validation, unit tests, and iterative repository improvement. GitHub supports Mermaid diagrams directly in Markdown, so this stays editable and visible in the README itself.
-
-## Current Status
-
-This repository is in an early foundation phase. The current work centers on repository organization, initial metrics-related code, validation logic, and a more structured development workflow built around small, reviewable changes.
 
 ## Current Capabilities
 
@@ -28,19 +6,14 @@ The repository currently supports early validation around metrics behavior, incl
 
 ## Guiding Principles
 
-IACK is being developed around a small set of principles:
 
-- Build incrementally.
-- Prefer testable behavior over vague claims.
-- Keep the architecture understandable.
-- Document changes as the project evolves.
-- Preserve scientific and technical credibility in the way the framework is described and extended.
 
 As the project grows, these principles may expand into more formal architecture notes, contribution standards, and CI workflows.
 
 ## Getting Started
 
 ### Requirements
+
 
 - Git.
 - A local clone of the repository.
@@ -63,7 +36,7 @@ If the tests pass, you should see the current validation suite complete successf
 
 ## Development Approach
 
-IACK is being developed in a disciplined incremental manner. The goal is not speed for its own sake, but a coherent and credible framework that improves through small validated changes. This approach is especially important while metric design and architecture are still being refined. Pull requests should remain focused, reviewable, and narrowly scoped.
+
 
 ## Roadmap
 
@@ -71,24 +44,7 @@ The roadmap is still evolving, but the current direction can be understood in th
 
 ### Phase 1: Foundation
 
-- Establish the repository structure.
-- Stabilize initial metrics and validation logic.
-- Expand tests around `compute_iack_metrics`.
-- Improve documentation and contribution pathways.
 
-### Phase 2: Structure
-
-- Refine metric definitions.
-- Add architecture notes.
-- Introduce stronger validation and more explicit interfaces.
-- Begin CI automation.
-
-### Phase 3: Growth
-
-- Formalize contributor guidance.
-- Expand documentation for users and collaborators.
-- Support more rigorous experimentation and research use.
-- Strengthen long-term maintainability.
 
 ## Contribution Intent
 
@@ -145,27 +101,5 @@ Many security ideas are discussed at a high level, but fewer are developed in a 
 ## Academic Orientation
 
 Although IACK is still early, part of its long-term aspiration is to become useful not only as a technical repository, but also as work with academic value. This includes the hope that it may eventually support:
-
-- Deeper technical study.
-- Clearer security-metric reasoning.
-- Collaborative research discussion.
-- Future learners or researchers who want to build on an honest and well-structured foundation.
-
-## License
-
-This project is licensed under the Apache-2.0 License. See the `LICENSE` file for details.
-
-## Contact
-
-For collaboration, academic discussion, or technical feedback, please open an issue or reach out through the appropriate project contact channel.
-
-- Email: felixcepeda@icloud.com
-- Phone: 1-647-410-2397
-
-## Repository Notes
-
-- Main repository: [iack-framework](https://github.com/Anthonybryan2021/iack-framework)
-- Documentation and contribution structure are expected to evolve over time.
-
 
 
