@@ -26,9 +26,12 @@ class TestMetricsPrototype(unittest.TestCase):
         with self.assertRaises(ValueError):
             compute_iack_metrics(window_size=0)
 
-    def test_default_metrics_are_placeholder_ones(self):
+    def test_placeholder_metrics_remain_one(self):
         data = compute_iack_metrics()
         self.assertEqual(data["integrity"], 1.0)
         self.assertEqual(data["availability"], 1.0)
         self.assertEqual(data["confidentiality_proxy"], 1.0)
-        self.assertEqual(data["windowed_efficiency"], 1.0)
+
+    def test_windowed_efficiency_reflects_inputs(self):
+        data = compute_iack_metrics(total_events=3, window_size=5)
+        self.assertAlmostEqual(data["windowed_efficiency"], 0.6)
