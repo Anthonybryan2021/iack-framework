@@ -1,11 +1,4 @@
-﻿# IACK Framework
-
-> An open cybersecurity framework in active early-stage development for structuring and validating security-related metrics in a clear, reproducible, and academically serious way.
-
-![Status](https://img.shields.io/badge/status-active%20development-blue)
-![Python](https://img.shields.io/badge/python-3.13+-blue)
-![Tests](https://img.shields.io/badge/tests-unittest-green)
-
+<
 ## Overview
 
 IACK is a mathematical and AI-driven framework for real-time confidentiality proxy measurement in cybersecurity systems. The project is being developed as a technical and academic initiative rather than a finished product. Its purpose is to evolve into a serious framework for measurable security analysis, with emphasis on clarity, reproducibility, integrity, and long-term research value.
@@ -39,6 +32,7 @@ graph TD
     D --> G[README / ROADMAP]
     E --> H[SECURITY.md / CONTRIBUTING.md]
 ```
+
 
 ## Project Vision
 
