@@ -1,44 +1,50 @@
+﻿# IACK Framework
 
+IACK is an early-stage, research-oriented cybersecurity framework focused on disciplined, testable development of security metrics and related validation logic. The repository is being shaped intentionally through incremental changes, unit tests, pull-request-based iteration, and a more structured development workflow.
 
-- early repository organization,
-- initial metrics-related code and validation logic,
-- unit testing for `compute_iack_metrics`,
-- pull-request-based iteration,
-- and the beginning of a more structured development workflow.
+## Architecture
 
-This is the stage where architecture, scope, documentation, and contribution pathways are being intentionally shaped.
+```mermaid
+flowchart TD
+    A[Input Data] --> B[compute_iack_metrics]
+    B --> C[Metric Outputs]
+    B --> D[Validation Logic]
+    D --> E[Invalid Input Handling]
+    C --> F[Unit Tests]
+    D --> F
+    F --> G[Pull Request Review]
+    G --> H[Updated README and Workflow]
+```
+
+This diagram reflects the current foundation: metric computation, validation, unit tests, and iterative repository improvement. GitHub supports Mermaid diagrams directly in Markdown, so this stays editable and visible in the README itself.
+
+## Current Status
+
+This repository is in an early foundation phase. The current work centers on repository organization, initial metrics-related code, validation logic, and a more structured development workflow built around small, reviewable changes.
 
 ## Current Capabilities
 
-The repository currently supports early validation around metrics behavior, including:
-
-- returning expected keys from `compute_iack_metrics`,
-- checking that metric values are numeric,
-- validating error handling for invalid inputs,
-- and confirming placeholder default metric values through unit tests.
-
-These capabilities are still foundational, but they establish an important base for future expansion.
+The repository currently supports early validation around metrics behavior, including returning expected keys from `compute_iack_metrics`, checking that metric values are numeric, validating error handling for invalid inputs, and confirming placeholder default metric values through unit tests. These capabilities are foundational, but they establish a base for future expansion.
 
 ## Guiding Principles
 
-IACK is being developed with a small set of guiding principles:
+IACK is being developed around a small set of principles:
 
+- Build incrementally.
+- Prefer testable behavior over vague claims.
+- Keep the architecture understandable.
+- Document changes as the project evolves.
+- Preserve scientific and technical credibility in the way the framework is described and extended.
 
-```
-
-Key areas:
-
-
-
-As the project grows, this structure may expand to include architecture notes, additional documentation, and CI workflows.
+As the project grows, these principles may expand into more formal architecture notes, contribution standards, and CI workflows.
 
 ## Getting Started
 
 ### Requirements
 
-
 - Git.
 - A local clone of the repository.
+- Python 3.x installed locally.
 
 ### Clone the repository
 
@@ -57,11 +63,7 @@ If the tests pass, you should see the current validation suite complete successf
 
 ## Development Approach
 
-IACK is currently being developed in a disciplined incremental manner:
-
-
-
-This approach is intentional. The goal is not to move quickly at the expense of rigor, but to let the framework mature in a way that remains coherent and credible.
+IACK is being developed in a disciplined incremental manner. The goal is not speed for its own sake, but a coherent and credible framework that improves through small validated changes. This approach is especially important while metric design and architecture are still being refined. Pull requests should remain focused, reviewable, and narrowly scoped.
 
 ## Roadmap
 
@@ -69,18 +71,35 @@ The roadmap is still evolving, but the current direction can be understood in th
 
 ### Phase 1: Foundation
 
+- Establish the repository structure.
+- Stabilize initial metrics and validation logic.
+- Expand tests around `compute_iack_metrics`.
+- Improve documentation and contribution pathways.
 
+### Phase 2: Structure
+
+- Refine metric definitions.
+- Add architecture notes.
+- Introduce stronger validation and more explicit interfaces.
+- Begin CI automation.
+
+### Phase 3: Growth
+
+- Formalize contributor guidance.
+- Expand documentation for users and collaborators.
+- Support more rigorous experimentation and research use.
+- Strengthen long-term maintainability.
 
 ## Contribution Intent
 
 At this stage, meaningful contributions may include:
 
-- architectural feedback,
-- review of metric design and assumptions,
-- testing and validation improvements,
-- documentation refinement,
-- repository organization,
-- and academic or research-oriented guidance.
+- Architectural feedback.
+- Review of metric design and assumptions.
+- Testing and validation improvements.
+- Documentation refinement.
+- Repository organization.
+- Academic or research-oriented guidance.
 
 The project especially welcomes thoughtful contributors who value serious technical work, humility in framing early-stage systems, and integrity in how ideas are developed.
 
@@ -100,22 +119,22 @@ As the repository matures, contribution guidelines will become more formalized i
 
 IACK is open to serious collaboration, especially where there is alignment around:
 
-- cybersecurity research,
-- security metric design,
-- framework architecture,
-- transparent technical development,
-- and long-term academic value.
+- Cybersecurity research.
+- Security metric design.
+- Framework architecture.
+- Transparent technical development.
+- Long-term academic value.
 
-The project is particularly interested in collaboration that helps strengthen both the technical rigor and the intellectual seriousness of the framework.
+The project is particularly interested in collaboration that strengthens both the technical rigor and the intellectual seriousness of the framework.
 
 ## Limitations
 
 This repository is still early-stage. That means:
 
-- the architecture is still evolving,
-- metric design is still being refined,
-- current outputs may include placeholder values,
-- and documentation is still catching up with the project’s intended direction.
+- The architecture is still evolving.
+- Metric design is still being refined.
+- Current outputs may include placeholder values.
+- Documentation is still catching up with the project’s intended direction.
 
 These limitations are acknowledged openly so that the framework can grow with credibility.
 
@@ -125,18 +144,27 @@ Many security ideas are discussed at a high level, but fewer are developed in a 
 
 ## Academic Orientation
 
-Although IACK is still early, part of its long-term aspiration is to become useful not only as a technical repository, but also as a piece of work with academic value. This includes the hope that it may eventually support:
+Although IACK is still early, part of its long-term aspiration is to become useful not only as a technical repository, but also as work with academic value. This includes the hope that it may eventually support:
 
-
-- deeper technical study,
-- clearer security-metric reasoning,
-- collaborative research discussion,
-- and future learners or researchers who want to build on an honest and well-structured foundation.
+- Deeper technical study.
+- Clearer security-metric reasoning.
+- Collaborative research discussion.
+- Future learners or researchers who want to build on an honest and well-structured foundation.
 
 ## License
 
+This project is licensed under the Apache-2.0 License. See the `LICENSE` file for details.
 
-[felixcepeda@icloud.com](mailto:felixcepeda@icloud.com)  
-1-647-410-2397
+## Contact
 
 For collaboration, academic discussion, or technical feedback, please open an issue or reach out through the appropriate project contact channel.
+
+- Email: felixcepeda@icloud.com
+- Phone: 1-647-410-2397
+
+## Repository Notes
+
+- Main repository: [iack-framework](https://github.com/Anthonybryan2021/iack-framework)
+- Documentation and contribution structure are expected to evolve over time.
+
+
