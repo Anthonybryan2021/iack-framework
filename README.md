@@ -2,62 +2,7 @@
 
 IACK is an early-stage, research-oriented cybersecurity framework focused on disciplined, testable development of security metrics and related validation logic. The repository is being shaped through incremental changes, unit tests, pull-request-based iteration, and a more structured development workflow.
 
-## Overview
 
-IACK is intended to explore security metrics in a careful and credible way. Rather than making broad claims, the project emphasizes measurable behavior, validation, and steady architectural refinement.
-
-The current work centers on repository structure, metric-related code, validation logic, documentation quality, and contribution pathways that support long-term growth.
-
-## Architecture
-
-```mermaid
-flowchart TD
-    A[Input Data] --> B[compute_iack_metrics]
-    B --> C[Metric Outputs]
-    B --> D[Validation Logic]
-    D --> E[Invalid Input Handling]
-    C --> F[Unit Tests]
-    D --> F
-    F --> G[Pull Request Review]
-    G --> H[Repository Improvement]
-```
-
-This diagram reflects the current foundation of the project: input handling, metric computation, validation, testing, and incremental improvement through review.
-
-## Current Status
-
-This repository is in a foundation-building phase. The current emphasis is on establishing a reliable base for metric behavior, validation patterns, documentation, and maintainable development practices.
-
-## Current Capabilities
-
-The repository currently supports early validation around metrics behavior, including:
-
-- Returning expected keys from `compute_iack_metrics`.
-- Checking that metric values are numeric.
-- Validating error handling for invalid inputs.
-- Testing bounded and input-dependent behavior for selected metrics.
-
-These capabilities are still foundational, but they provide a base for future expansion.
-
-## Guiding Principles
-
-IACK is being developed around a small set of principles:
-
-- Build incrementally.
-- Prefer testable behavior over vague claims.
-- Keep the architecture understandable.
-- Document changes as the project evolves.
-- Preserve scientific and technical credibility in the way the framework is described and extended.
-
-As the project grows, these principles may expand into more formal architecture notes, contribution standards, and CI workflows.
-
-## Getting Started
-
-### Requirements
-
-- Git
-- Python 3.x
-- A local clone of the repository
 
 ### Clone the repository
 
@@ -76,9 +21,7 @@ If the tests pass, the current validation suite should complete successfully.
 
 ## Development Approach
 
-IACK is being developed in a disciplined incremental manner. The goal is not speed for its own sake, but a coherent and credible framework that improves through small, validated changes.
 
-This approach is especially important while metric design and architecture are still being refined. Pull requests should remain focused, reviewable, and narrowly scoped.
 
 ## Roadmap
 
@@ -109,12 +52,7 @@ The roadmap is still evolving, but the current direction can be understood in th
 
 At this stage, meaningful contributions may include:
 
-- Architectural feedback
-- Review of metric design and assumptions
-- Testing and validation improvements
-- Documentation refinement
-- Repository organization
-- Academic or research-oriented guidance
+
 
 The project especially welcomes thoughtful contributors who value serious technical work, humility in framing early-stage systems, and integrity in how ideas are developed.
 
@@ -134,13 +72,6 @@ As the repository matures, contribution expectations may become more formalized 
 
 IACK is open to serious collaboration, especially where there is alignment around:
 
-- Cybersecurity research
-- Security metric design
-- Framework architecture
-- Transparent technical development
-- Long-term academic value
-
-The project is particularly interested in collaboration that strengthens both the technical rigor and the intellectual seriousness of the framework.
 
 ## Limitations
 
@@ -148,8 +79,7 @@ This repository is still early-stage. That means:
 
 - The architecture is still evolving.
 - Metric design is still being refined.
-- Some outputs may remain provisional as the model develops.
-- Documentation is still catching up with the project’s intended direction.
+
 
 These limitations are acknowledged openly so that the framework can grow with credibility rather than inflated claims.
 
@@ -163,23 +93,4 @@ Although IACK is still early, part of its long-term aspiration is to become usef
 
 This includes the hope that it may eventually support:
 
-- Deeper technical study
-- Clearer security-metric reasoning
-- Collaborative research discussion
-- Future learners or researchers who want to build on an honest and well-structured foundation
 
-## License
-
-This project is licensed under the Apache-2.0 License. See the `LICENSE` file for details.
-
-## Contact
-
-For collaboration, academic discussion, or technical feedback, please open an issue or use the appropriate project contact channel.
-
-- Email: felixcepeda@icloud.com
-- Phone: 1-647-410-2397
-
-## Repository Notes
-
-- Main repository: [iack-framework](https://github.com/Anthonybryan2021/iack-framework)
-- Documentation and contribution structure are expected to evolve over time.
