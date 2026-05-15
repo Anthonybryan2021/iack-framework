@@ -1,6 +1,9 @@
 ﻿import unittest
 from src.metrics import compute_iack_metrics
 
+import unittest
+from src.metrics import compute_iack_metrics
+
 
 class TestMetricsPrototype(unittest.TestCase):
     def test_compute_iack_metrics_outputs_expected_keys(self):
