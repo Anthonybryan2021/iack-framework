@@ -3,7 +3,6 @@
 IACK is an early-stage, research-oriented cybersecurity framework focused on disciplined, testable development of security metrics and related validation logic. The repository is being shaped through incremental changes, unit tests, pull-request-based iteration, and a more structured development workflow.
 
 
-
 ### Clone the repository
 
 ```bash
@@ -20,7 +19,6 @@ python -m unittest discover -s tests
 If the tests pass, the current validation suite should complete successfully.
 
 ## Development Approach
-
 
 
 ## Roadmap
@@ -50,11 +48,6 @@ The roadmap is still evolving, but the current direction can be understood in th
 
 ## Contribution Intent
 
-At this stage, meaningful contributions may include:
-
-
-
-The project especially welcomes thoughtful contributors who value serious technical work, humility in framing early-stage systems, and integrity in how ideas are developed.
 
 ## How to Contribute
 
@@ -89,8 +82,5 @@ Many security ideas are discussed at a high level, but fewer are developed in a 
 
 ## Academic Orientation
 
-Although IACK is still early, part of its long-term aspiration is to become useful not only as a technical repository, but also as work with academic value.
-
-This includes the hope that it may eventually support:
 
 
