@@ -1,4 +1,9 @@
 def compute_iack_metrics(total_events=1, window_size=1):
+    if isinstance(total_events, bool):
+        raise TypeError("total_events must be an int or float, not bool")
+    if isinstance(window_size, bool):
+        raise TypeError("window_size must be an int or float, not bool")
+
     if total_events <= 0:
         raise ValueError("total_events must be greater than 0")
     if window_size <= 0:
