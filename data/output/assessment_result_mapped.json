@@ -1,0 +1,52 @@
+{
+  "assessment_id": "IACK-0001",
+  "system_name": "IACK Framework Demo",
+  "assessment_date": "2026-05-20",
+  "overall_weighted_score": 0.754,
+  "metrics_passed": 2,
+  "metrics_failed": 1,
+  "metric_results": [
+    {
+      "metric_id": "CONF-001",
+      "metric_name": "Confidentiality Control Strength",
+      "domain": "confidentiality",
+      "score": 0.82,
+      "weight": 0.4,
+      "threshold": 0.7,
+      "passed": true,
+      "confidence": "high",
+      "evidence_count": 3,
+      "csf_function": "Protect",
+      "csf_code": "PR",
+      "rationale": "Confidentiality safeguards align to data protection and access control outcomes."
+    },
+    {
+      "metric_id": "AUTH-001",
+      "metric_name": "Authenticity Assurance",
+      "domain": "authenticity",
+      "score": 0.74,
+      "weight": 0.3,
+      "threshold": 0.65,
+      "passed": true,
+      "confidence": "medium",
+      "evidence_count": 2,
+      "csf_function": "Protect",
+      "csf_code": "PR",
+      "rationale": "Authenticity supports trusted identities, credentials, and protective safeguards."
+    },
+    {
+      "metric_id": "INTEG-001",
+      "metric_name": "Integrity Verification Coverage",
+      "domain": "integrity",
+      "score": 0.68,
+      "weight": 0.3,
+      "threshold": 0.75,
+      "passed": false,
+      "confidence": "low",
+      "evidence_count": 1,
+      "csf_function": "Detect",
+      "csf_code": "DE",
+      "rationale": "Integrity issues often require monitoring, verification, and detection of unauthorized changes."
+    }
+  ]
+}

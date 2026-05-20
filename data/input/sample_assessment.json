@@ -1,0 +1,46 @@
+{
+  "assessment_id": "IACK-0001",
+  "system_name": "IACK Framework Demo",
+  "assessment_date": "2026-05-20",
+  "metrics": [
+    {
+      "metric_id": "CONF-001",
+      "metric_name": "Confidentiality Control Strength",
+      "domain": "confidentiality",
+      "weight": 0.40,
+      "threshold": 0.70,
+      "confidence_rule": "high_if_evidence_count_gte_3",
+      "score": 0.82,
+      "evidence": [
+        "access-control-policy",
+        "mfa-enabled",
+        "encryption-at-rest"
+      ]
+    },
+    {
+      "metric_id": "AUTH-001",
+      "metric_name": "Authenticity Assurance",
+      "domain": "authenticity",
+      "weight": 0.30,
+      "threshold": 0.65,
+      "confidence_rule": "medium_if_evidence_count_eq_2",
+      "score": 0.74,
+      "evidence": [
+        "signed-logs",
+        "certificate-validation"
+      ]
+    },
+    {
+      "metric_id": "INTEG-001",
+      "metric_name": "Integrity Verification Coverage",
+      "domain": "integrity",
+      "weight": 0.30,
+      "threshold": 0.75,
+      "confidence_rule": "low_if_evidence_count_lt_2",
+      "score": 0.68,
+      "evidence": [
+        "hash-validation"
+      ]
+    }
+  ]
+}
