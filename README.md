@@ -108,27 +108,23 @@ Although IACK is still early, part of its long-term aspiration is to become usef
 ## Developer setup
 
 ### Create and activate a virtual environment
-
 ```powershell
 python -m venv .venv
 .\.venv\Scripts\Activate.ps1
 ```
 
 ### Install development dependencies
-
 ```powershell
 python -m pip install --upgrade pip
 python -m pip install -e .[dev]
 ```
 
 ### Run tests
-
 ```powershell
 pytest
 ```
 
 ### Run lint checks
-
 ```powershell
 ruff check .
 ```
