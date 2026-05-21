@@ -1,9 +1,12 @@
-__pycache__/
-*.pyc
-.venv/
-.env
-.DS_Store
-.vscode/
-*.log
-
+﻿# Build artifacts
+build/
+dist/
 *.egg-info/
+
+# Coverage
+.coverage
+.coverage.*
+
+# Python cache
+__pycache__/
+*.py[cod]
