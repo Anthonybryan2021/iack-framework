@@ -11,17 +11,31 @@ python -m pip install -e .
 ## Assessment flow
 
 ```python
-from iack.validators.assessment_validator import validate_assessment
-from iack.mappings.csf_mapping import map_to_csf
-from iack.metrics.model import compute_iack_metrics
-from iack.outputs.report_writer import write_report
-```
+import json
+from pathlib import Path
 
-1. Load an assessment input.
-2. Validate the structure and values.
-3. Map findings to a framework view.
-4. Compute IACK metrics.
-5. Write the report output.
+from iack.validators.assessment_validator import validate_assessment
+from iack.metrics.model import score_assessment
+from iack.mappings.csf_mapping import apply_csf_mapping
+from iack.outputs.report_writer import write_json, write_csv, write_markdown
+
+input_path = Path("examples/assessment-input.json")
+data = json.loads(input_path.read_text(encoding="utf-8"))
+
+errors = validate_assessment(data)
+if errors:
+    raise ValueError(f"Assessment validation failed: {errors}")
+
+result = score_assessment(data)
+mapped_result = apply_csf_mapping(result)
+
+output_dir = Path("data/output")
+output_dir.mkdir(parents=True, exist_ok=True)
+
+write_json(output_dir / "assessment_result.json", mapped_result)
+write_csv(output_dir / "assessment_result.csv", mapped_result["metric_results"])
+write_markdown(output_dir / "assessment_result.md", mapped_result)
+```
 
 ## Example inputs
 
