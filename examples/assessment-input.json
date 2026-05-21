@@ -1,0 +1,9 @@
+﻿{
+  "assessment_id": "example-001",
+  "system_name": "demo-system",
+  "integrity": 0.82,
+  "authenticity": 0.76,
+  "confidentiality": 0.88,
+  "key_management": 0.71,
+  "notes": "Example assessment input for IACK packaging and workflow testing."
+}

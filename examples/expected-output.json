@@ -1,0 +1,7 @@
+﻿{
+  "assessment_id": "example-001",
+  "overall_score": 0.79,
+  "status": "provisional",
+  "mapped_framework": "NIST CSF",
+  "summary": "Example expected output for documentation and packaging validation."
+}
