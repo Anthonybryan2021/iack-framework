@@ -69,7 +69,7 @@ def main() -> int:
         print(f"Input file not found: {input_path}")
         return 1
 
-    with input_path.open("r", encoding="utf-8") as f:
+    with input_path.open("r", encoding="utf-8-sig") as f:
         data = json.load(f)
 
     result = score_assessment(data)

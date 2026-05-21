@@ -1,7 +1,8 @@
-﻿{
+{
   "assessment_id": "example-001",
-  "overall_score": 0.79,
-  "status": "provisional",
-  "mapped_framework": "NIST CSF",
-  "summary": "Example expected output for documentation and packaging validation."
+  "system_name": "demo-system",
+  "assessment_date": "2026-05-21",
+  "overall_weighted_score": 0.8,
+  "metrics_passed": 3,
+  "metrics_failed": 1
 }

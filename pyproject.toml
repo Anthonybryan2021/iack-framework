@@ -15,6 +15,12 @@ authors = [
 ]
 dependencies = []
 
+[project.scripts]
+iack-validate = "iack.validators.assessment_validator:main"
+iack-score = "iack.metrics.model:main"
+iack-map-csf = "iack.mappings.csf_mapping:main"
+iack-report = "iack.outputs.report_writer:main"
+
 [project.optional-dependencies]
 dev = [
   "pytest>=8.0",

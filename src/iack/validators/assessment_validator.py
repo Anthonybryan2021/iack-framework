@@ -76,7 +76,7 @@ def main() -> int:
         print(f"Input file not found: {input_path}")
         return 1
 
-    with input_path.open("r", encoding="utf-8") as f:
+    with input_path.open("r", encoding="utf-8-sig") as f:
         data = json.load(f)
 
     errors = validate_assessment(data)

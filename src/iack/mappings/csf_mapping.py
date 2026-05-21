@@ -67,7 +67,7 @@ def main() -> int:
         print(f"Input file not found: {input_path}")
         return 1
 
-    with input_path.open("r", encoding="utf-8") as f:
+    with input_path.open("r", encoding="utf-8-sig") as f:
         data = json.load(f)
 
     scored_result = score_assessment(data)
@@ -77,7 +77,7 @@ def main() -> int:
     output_dir.mkdir(parents=True, exist_ok=True)
 
     output_path = output_dir / "assessment_result_mapped.json"
-    output_path.write_text(json.dumps(mapped_result, indent=2), encoding="utf-8")
+    output_path.write_text(json.dumps(mapped_result, indent=2), encoding="utf-8-sig")
 
     print(f"Wrote: {output_path}")
     return 0

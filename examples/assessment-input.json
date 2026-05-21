@@ -1,9 +1,47 @@
-﻿{
+{
   "assessment_id": "example-001",
   "system_name": "demo-system",
-  "integrity": 0.82,
-  "authenticity": 0.76,
-  "confidentiality": 0.88,
-  "key_management": 0.71,
-  "notes": "Example assessment input for IACK packaging and workflow testing."
+  "assessment_date": "2026-05-21",
+  "metrics": [
+    {
+      "metric_id": "M-001",
+      "metric_name": "Database encryption control",
+      "domain": "confidentiality",
+      "weight": 0.25,
+      "threshold": 0.8,
+      "confidence_rule": "evidence_count",
+      "score": 0.9,
+      "evidence": ["kms-policy", "db-config", "audit-log"]
+    },
+    {
+      "metric_id": "M-002",
+      "metric_name": "Service identity verification",
+      "domain": "authenticity",
+      "weight": 0.25,
+      "threshold": 0.75,
+      "confidence_rule": "evidence_count",
+      "score": 0.8,
+      "evidence": ["mfa-config", "idp-log"]
+    },
+    {
+      "metric_id": "M-003",
+      "metric_name": "File integrity monitoring",
+      "domain": "integrity",
+      "weight": 0.25,
+      "threshold": 0.7,
+      "confidence_rule": "evidence_count",
+      "score": 0.65,
+      "evidence": ["fim-report"]
+    },
+    {
+      "metric_id": "M-004",
+      "metric_name": "Security policy governance review",
+      "domain": "governance",
+      "weight": 0.25,
+      "threshold": 0.7,
+      "confidence_rule": "evidence_count",
+      "score": 0.85,
+      "evidence": ["policy-review", "board-minutes", "risk-register"]
+    }
+  ]
 }
