@@ -1,0 +1,58 @@
+﻿{
+    "assessment_id":  "assess-20260526095809",
+    "system_name":  "IACK Framework",
+    "assessment_date":  "2026-05-26",
+    "metrics":  [
+                    {
+                        "metric_id":  "I1",
+                        "metric_name":  "Integrity Controls",
+                        "domain":  "Integrity",
+                        "score":  0.78,
+                        "weight":  0.25,
+                        "threshold":  0.7,
+                        "evidence":  [
+                                         "hash validation",
+                                         "config review",
+                                         "audit log"
+                                     ]
+                    },
+                    {
+                        "metric_id":  "A1",
+                        "metric_name":  "Authenticity Validation",
+                        "domain":  "Authenticity",
+                        "score":  0.84,
+                        "weight":  0.25,
+                        "threshold":  0.7,
+                        "evidence":  [
+                                         "certificate check",
+                                         "identity proof"
+                                     ]
+                    },
+                    {
+                        "metric_id":  "C1",
+                        "metric_name":  "Confidentiality Safeguards",
+                        "domain":  "Confidentiality",
+                        "score":  0.81,
+                        "weight":  0.25,
+                        "threshold":  0.7,
+                        "evidence":  [
+                                         "encryption review",
+                                         "access control",
+                                         "data handling"
+                                     ]
+                    },
+                    {
+                        "metric_id":  "K1",
+                        "metric_name":  "Key Management",
+                        "domain":  "Key Management",
+                        "score":  0.85,
+                        "weight":  0.25,
+                        "threshold":  0.7,
+                        "evidence":  [
+                                         "rotation policy",
+                                         "vault config",
+                                         "recovery test"
+                                     ]
+                    }
+                ]
+}
