@@ -1,19 +1,25 @@
-# Changelog
+﻿# Changelog
 
 All notable changes to this project will be documented in this file.
 
-The format is based on Keep a Changelog, and this project follows Semantic Versioning.
+The format is inspired by Keep a Changelog, and version numbers follow Semantic Versioning.
 
-## [v0.2.0] - 2026-05-20
+## [Unreleased]
 
 ### Added
-- Added src/metric_validation.py with initial metric input validation logic.
-- Added 	ests/test_metric_validation.py to cover valid, invalid, and edge-case validation inputs.
-- Added pyproject.toml with project metadata, pytest configuration, and Ruff configuration.
-- Added GitHub Actions CI workflow for automated tests and linting.
+- GitHub Actions CI workflow for pytest, package build, and twine validation.
+- Repository release policy and semantic versioning guidance.
 
 ### Changed
-- Updated README.md with developer setup, test, and lint instructions.
+- README aligned with current packaged module usage and distribution scope.
 
-### Fixed
-- Improved project readiness for reproducible local setup and validation-focused development.
+## [0.2.0] - 2026-06-04
+
+### Added
+- Packaged `src/iack/` distribution with validated build artifacts.
+- Documented import-based package usage.
+
+### Validated
+- `python -m build`
+- `python -m twine check dist/*`
+- `pytest` passing locally
