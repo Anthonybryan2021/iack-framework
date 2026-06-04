@@ -1,0 +1,34 @@
+﻿{
+    "framework":  "IACK",
+    "generated_at":  "2026-06-04T11:56:16",
+    "source_mapping":  ".\\assets\\data\\iack-mitre-mapping.json",
+    "integrity_metric":  "I1",
+    "integrity_score":  84,
+    "integrity_status":  "Validated",
+    "integrity_tactic":  "Impact",
+    "integrity_technique":  "T1565 - Data Manipulation",
+    "decision":  "Integrity is now reflected in the mapping. Promote the control set into the release workflow.",
+    "recommended_primary_control":  "Artifact integrity validation",
+    "controls":  [
+                     {
+                         "control":  "Artifact integrity validation",
+                         "description":  "Verify SHA-256 hashes for release artifacts before publish.",
+                         "priority":  1
+                     },
+                     {
+                         "control":  "Release signing",
+                         "description":  "Sign tags and release artifacts to strengthen provenance.",
+                         "priority":  2
+                     },
+                     {
+                         "control":  "Approval gates",
+                         "description":  "Require manual approval after validation succeeds.",
+                         "priority":  3
+                     },
+                     {
+                         "control":  "Tamper monitoring",
+                         "description":  "Alert on unauthorized changes to outputs and release files.",
+                         "priority":  4
+                     }
+                 ]
+}

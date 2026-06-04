@@ -1,0 +1,64 @@
+﻿{
+    "framework":  "IACK",
+    "mapping_version":  "v0.3",
+    "generated_at":  "2026-06-04T11:56:16",
+    "source_metrics":  ".\\assets\\data\\current-metrics.json",
+    "overall_score":  82,
+    "validation":  "Passed",
+    "open_findings":  0,
+    "next_action":  "Artifact integrity validation is enforced; review live data ingestion refinement.",
+    "items":  [
+                  {
+                      "metric_id":  "I1",
+                      "metric_name":  "Integrity Controls",
+                      "attack_tactic":  "Impact",
+                      "attack_technique_id":  "T1565",
+                      "attack_technique_name":  "Data Manipulation",
+                      "confidence":  "High",
+                      "recommendation":  "Artifact integrity validation is enforced in the release workflow.",
+                      "owner":  "Felix",
+                      "status":  "Validated",
+                      "pillar_score":  84,
+                      "pillar_rating":  "good"
+                  },
+                  {
+                      "metric_id":  "A1",
+                      "metric_name":  "Authenticity Controls",
+                      "attack_tactic":  "Credential Access",
+                      "attack_technique_id":  "T1078",
+                      "attack_technique_name":  "Valid Accounts",
+                      "confidence":  "High",
+                      "recommendation":  "Strengthen identity validation, trust verification, and certificate checks.",
+                      "owner":  "Felix",
+                      "status":  "Validated",
+                      "pillar_score":  84,
+                      "pillar_rating":  "good"
+                  },
+                  {
+                      "metric_id":  "C1",
+                      "metric_name":  "Confidentiality Controls",
+                      "attack_tactic":  "Exfiltration",
+                      "attack_technique_id":  "T1041",
+                      "attack_technique_name":  "Exfiltration Over C2 Channel",
+                      "confidence":  "High",
+                      "recommendation":  "Tighten data handling, access restrictions, and egress monitoring.",
+                      "owner":  "Felix",
+                      "status":  "Validated",
+                      "pillar_score":  81,
+                      "pillar_rating":  "good"
+                  },
+                  {
+                      "metric_id":  "K1",
+                      "metric_name":  "Key Management Controls",
+                      "attack_tactic":  "Credential Access",
+                      "attack_technique_id":  "T1552",
+                      "attack_technique_name":  "Unsecured Credentials",
+                      "confidence":  "High",
+                      "recommendation":  "Improve secret storage, rotation, access control, and key exposure monitoring.",
+                      "owner":  "Felix",
+                      "status":  "Validated",
+                      "pillar_score":  85,
+                      "pillar_rating":  "good"
+                  }
+              ]
+}

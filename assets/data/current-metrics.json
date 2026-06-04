@@ -1,127 +1,125 @@
-﻿{
-    "runId":  "run-2026-05-26-100021",
-    "overview":  {
-                     "iackScore":  82,
-                     "validationStatus":  "Passed",
-                     "confidence":  "high",
-                     "openFindings":  0,
-                     "lastRun":  "2026-05-26 10:00:21",
-                     "scoreDelta":  "+0.0%",
-                     "nextAction":  "Review assessment input and refine live data ingestion.",
-                     "changes":  [
-                                     "Loaded live assessment input from JSON.",
-                                     "Generated normalized dashboard export from framework scoring model."
-                                 ],
-                     "pillars":  [
-                                     {
-                                         "name":  "Integrity",
-                                         "score":  78,
-                                         "status":  "good"
-                                     },
-                                     {
-                                         "name":  "Authenticity",
-                                         "score":  84,
-                                         "status":  "good"
-                                     },
-                                     {
-                                         "name":  "Confidentiality",
-                                         "score":  81,
-                                         "status":  "good"
-                                     },
-                                     {
-                                         "name":  "Key Management",
-                                         "score":  85,
-                                         "status":  "good"
-                                     }
-                                 ]
-                 },
-    "validationLab":  {
-                          "activeDataset":  "assess-20260526095809",
-                          "scenario":  "IACK Framework",
-                          "runId":  "run-2026-05-26-100021",
-                          "testsPassed":  4,
-                          "testsFailed":  0,
-                          "duration":  "00:00:05",
-                          "logLines":  [
-                                           "[INFO] Python metrics exporter started",
-                                           "[INFO] Loaded assessment input: assessment-input.json",
-                                           "[PASS] score_assessment executed",
-                                           "[PASS] metrics-output.json written",
-                                           "[DONE] Export completed"
-                                       ]
-                      },
-    "integrity":  {
-                      "score":  78,
-                      "driftEvents":  0,
-                      "verifiedArtifacts":  4,
-                      "exceptions":  0,
-                      "summary":  "Integrity metrics exported from the framework model.",
-                      "issues":  [
-
-                                 ]
-                  },
-    "reports":  {
-                    "executiveSummary":  "Automated IACK export completed successfully.",
-                    "technicalSummary":  "Metrics were computed through score_assessment and serialized for PowerShell pipeline consumption.",
-                    "researchSummary":  "This output connects assessment input data to downstream reporting artifacts.",
-                    "exports":  [
-                                    "Cockpit JSON artifact",
-                                    "Validation history snapshot",
-                                    "Formula changelog linkage"
-                                ]
-                },
-    "rawAssessment":  {
-                          "assessment_id":  "assess-20260526095809",
-                          "system_name":  "IACK Framework",
-                          "assessment_date":  "2026-05-26",
-                          "overall_weighted_score":  0.82,
-                          "metrics_passed":  4,
-                          "metrics_failed":  0,
-                          "metric_results":  [
-                                                 {
-                                                     "metric_id":  "I1",
-                                                     "metric_name":  "Integrity Controls",
-                                                     "domain":  "Integrity",
-                                                     "score":  0.78,
-                                                     "weight":  0.25,
-                                                     "threshold":  0.7,
-                                                     "passed":  true,
-                                                     "confidence":  "high",
-                                                     "evidence_count":  3
-                                                 },
-                                                 {
-                                                     "metric_id":  "A1",
-                                                     "metric_name":  "Authenticity Validation",
-                                                     "domain":  "Authenticity",
-                                                     "score":  0.84,
-                                                     "weight":  0.25,
-                                                     "threshold":  0.7,
-                                                     "passed":  true,
-                                                     "confidence":  "medium",
-                                                     "evidence_count":  2
-                                                 },
-                                                 {
-                                                     "metric_id":  "C1",
-                                                     "metric_name":  "Confidentiality Safeguards",
-                                                     "domain":  "Confidentiality",
-                                                     "score":  0.81,
-                                                     "weight":  0.25,
-                                                     "threshold":  0.7,
-                                                     "passed":  true,
-                                                     "confidence":  "high",
-                                                     "evidence_count":  3
-                                                 },
-                                                 {
-                                                     "metric_id":  "K1",
-                                                     "metric_name":  "Key Management",
-                                                     "domain":  "Key Management",
-                                                     "score":  0.85,
-                                                     "weight":  0.25,
-                                                     "threshold":  0.7,
-                                                     "passed":  true,
-                                                     "confidence":  "high",
-                                                     "evidence_count":  3
-                                                 }
-                                             ]
-                      }
+{
+  "runId": "run-2026-06-04-115616",
+  "overview": {
+    "iackScore": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "openFindings": 0,
+    "lastRun": "2026-06-04 11:56:16",
+    "scoreDelta": "+0.0%",
+    "nextAction": "Artifact integrity validation is enforced; review live data ingestion refinement.",
+    "changes": [
+      "Loaded live assessment input from JSON.",
+      "Generated normalized dashboard export from framework scoring model."
+    ],
+    "pillars": [
+      {
+        "name": "Integrity",
+        "score": 84,
+        "status": "good"
+      },
+      {
+        "name": "Authenticity",
+        "score": 84,
+        "status": "good"
+      },
+      {
+        "name": "Confidentiality",
+        "score": 81,
+        "status": "good"
+      },
+      {
+        "name": "Key Management",
+        "score": 85,
+        "status": "good"
+      }
+    ]
+  },
+  "validationLab": {
+    "activeDataset": "assess-20260526095809",
+    "scenario": "IACK Framework",
+    "runId": "run-2026-06-04-115616",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "logLines": [
+      "[INFO] Python metrics exporter started",
+      "[INFO] Loaded assessment input: assessment-input.json",
+      "[PASS] score_assessment executed",
+      "[PASS] metrics-output.json written",
+      "[DONE] Export completed"
+    ]
+  },
+  "integrity": {
+    "score": 84,
+    "driftEvents": 0,
+    "verifiedArtifacts": 4,
+    "exceptions": 0,
+    "summary": "Integrity metrics exported from the framework model.",
+    "issues": []
+  },
+  "reports": {
+    "executiveSummary": "Automated IACK export completed successfully.",
+    "technicalSummary": "Metrics were computed through score_assessment and serialized for PowerShell pipeline consumption.",
+    "researchSummary": "This output connects assessment input data to downstream reporting artifacts.",
+    "exports": [
+      "Cockpit JSON artifact",
+      "Validation history snapshot",
+      "Formula changelog linkage"
+    ]
+  },
+  "rawAssessment": {
+    "assessment_id": "assess-20260526095809",
+    "system_name": "IACK Framework",
+    "assessment_date": "2026-05-26",
+    "overall_weighted_score": 0.82,
+    "metrics_passed": 4,
+    "metrics_failed": 0,
+    "metric_results": [
+      {
+        "metric_id": "I1",
+        "metric_name": "Integrity Controls",
+        "domain": "Integrity",
+        "score": 0.78,
+        "weight": 0.25,
+        "threshold": 0.7,
+        "passed": true,
+        "confidence": "high",
+        "evidence_count": 3
+      },
+      {
+        "metric_id": "A1",
+        "metric_name": "Authenticity Validation",
+        "domain": "Authenticity",
+        "score": 0.84,
+        "weight": 0.25,
+        "threshold": 0.7,
+        "passed": true,
+        "confidence": "medium",
+        "evidence_count": 2
+      },
+      {
+        "metric_id": "C1",
+        "metric_name": "Confidentiality Safeguards",
+        "domain": "Confidentiality",
+        "score": 0.81,
+        "weight": 0.25,
+        "threshold": 0.7,
+        "passed": true,
+        "confidence": "high",
+        "evidence_count": 3
+      },
+      {
+        "metric_id": "K1",
+        "metric_name": "Key Management",
+        "domain": "Key Management",
+        "score": 0.85,
+        "weight": 0.25,
+        "threshold": 0.7,
+        "passed": true,
+        "confidence": "high",
+        "evidence_count": 3
+      }
+    ]
+  }
 }

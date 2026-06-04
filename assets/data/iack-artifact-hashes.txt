@@ -1,0 +1,4 @@
+6DBB828D3CF4A971E67B6C96A92CD20EEAB5C78767205D64A0EF3281AE4B6C64  C:\Users\Felix\Documents\GitHub\iack-framework\scripts\..\outputs\metrics-output.json
+4D220278B0E898336DE49F509A876FBB5E51CFFB5571FA1C24FE2D3DADA0AA5E  C:\Users\Felix\Documents\GitHub\iack-framework\scripts\..\assets\data\current-metrics.json
+6D23A6EA62E4B843BF627B27475855D501777E21343F2D31B28DE31CF04E1B8E  C:\Users\Felix\Documents\GitHub\iack-framework\scripts\..\assets\data\validation-history.json
+8E2DEBFA7A49DB14CD74143657EA03236972F7824094568249F25E07D5B16748  C:\Users\Felix\Documents\GitHub\iack-framework\scripts\..\assets\data\iack-mitre-mapping.json
