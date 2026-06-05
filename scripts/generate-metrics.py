@@ -17,7 +17,7 @@ DEFAULT_OUTPUT = ROOT / "outputs" / "metrics-output.json"
 if str(SRC) not in sys.path:
     sys.path.insert(0, str(SRC))
 
-from iack.metrics.model import score_assessment
+from iack.metrics.model import score_assessment  # noqa: E402
 
 
 def load_input(path: Path) -> dict:
