@@ -8,7 +8,6 @@ from datetime import datetime
 def has_artifact_integrity_gate():
     manifest = Path("assets/data/iack-artifact-hashes.txt")
     return manifest.exists() and manifest.stat().st_size > 0
-from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 SRC = ROOT / "src"

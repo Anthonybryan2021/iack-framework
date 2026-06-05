@@ -1,4 +1,3 @@
-import pytest
 
 from iack.validators.assessment_validator import validate_assessment
 
