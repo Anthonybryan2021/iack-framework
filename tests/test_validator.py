@@ -1,4 +1,5 @@
-import pytest
+import json
+from iack.validators.assessment_validator import main
 
 from iack.validators.assessment_validator import validate_assessment
 
@@ -116,8 +117,6 @@ def test_validate_assessment_rejects_non_list_evidence():
     result = validate_assessment(data)
     assert "AUTH-001 evidence must be a list" in result
 
-import json
-from iack.validators.assessment_validator import main
 
 
 def test_validator_main_returns_1_when_no_args(monkeypatch, capsys):

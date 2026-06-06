@@ -1,3 +1,4 @@
+from iack.outputs.report_writer import main
 import csv
 import json
 
@@ -89,7 +90,6 @@ def test_write_markdown_creates_expected_sections(tmp_path):
     assert "| Metric ID | Metric Name | Domain | Score | Threshold | Passed | Confidence | Evidence Count |" in content
     assert "| CONF-001 | Confidentiality Control Strength | confidentiality | 0.82 | 0.7 | True | high | 3 |" in content
 
-from iack.outputs.report_writer import main
 
 
 def make_input_assessment():

@@ -1,57 +1,145 @@
-﻿[
-    {
-        "timestamp":  "2026-05-25 13:49:42",
-        "runId":  "run-2026-05-25-134942",
-        "score":  82,
-        "validationStatus":  "Passed",
-        "confidence":  "high",
-        "testsPassed":  4,
-        "testsFailed":  0,
-        "duration":  "00:00:05",
-        "source":  "metrics-output.json"
-    },
-    {
-        "timestamp":  "2026-05-25 15:32:14",
-        "runId":  "run-2026-05-25-153214",
-        "score":  82,
-        "validationStatus":  "Passed",
-        "confidence":  "high",
-        "testsPassed":  4,
-        "testsFailed":  0,
-        "duration":  "00:00:05",
-        "source":  "metrics-output.json"
-    },
-    {
-        "timestamp":  "2026-05-25 15:54:27",
-        "runId":  "run-2026-05-25-155427",
-        "score":  82,
-        "validationStatus":  "Passed",
-        "confidence":  "high",
-        "testsPassed":  4,
-        "testsFailed":  0,
-        "duration":  "00:00:05",
-        "source":  "metrics-output.json"
-    },
-    {
-        "timestamp":  "2026-05-26 09:23:06",
-        "runId":  "run-2026-05-26-092306",
-        "score":  82,
-        "validationStatus":  "Passed",
-        "confidence":  "high",
-        "testsPassed":  4,
-        "testsFailed":  0,
-        "duration":  "00:00:05",
-        "source":  "metrics-output.json"
-    },
-    {
-        "timestamp":  "2026-05-26 10:00:21",
-        "runId":  "run-2026-05-26-100021",
-        "score":  82,
-        "validationStatus":  "Passed",
-        "confidence":  "high",
-        "testsPassed":  4,
-        "testsFailed":  0,
-        "duration":  "00:00:05",
-        "source":  "metrics-output.json"
-    }
+[
+  {
+    "timestamp": "2026-05-25 13:49:42",
+    "runId": "run-2026-05-25-134942",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-05-25 15:32:14",
+    "runId": "run-2026-05-25-153214",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-05-25 15:54:27",
+    "runId": "run-2026-05-25-155427",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-05-26 09:23:06",
+    "runId": "run-2026-05-26-092306",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-05-26 10:00:21",
+    "runId": "run-2026-05-26-100021",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-06-04 10:07:04",
+    "runId": "run-2026-06-04-100704",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-06-04 10:22:54",
+    "runId": "run-2026-06-04-102254",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-06-04 10:32:48",
+    "runId": "run-2026-06-04-103248",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-06-04 11:20:33",
+    "runId": "run-2026-06-04-112033",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-06-04 11:26:09",
+    "runId": "run-2026-06-04-112609",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-06-04 11:35:17",
+    "runId": "run-2026-06-04-113517",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-06-04 11:49:34",
+    "runId": "run-2026-06-04-114934",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  },
+  {
+    "timestamp": "2026-06-04 11:56:16",
+    "runId": "run-2026-06-04-115616",
+    "score": 82,
+    "validationStatus": "Passed",
+    "confidence": "high",
+    "testsPassed": 4,
+    "testsFailed": 0,
+    "duration": "00:00:05",
+    "source": "metrics-output.json"
+  }
 ]

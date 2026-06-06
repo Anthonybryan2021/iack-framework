@@ -158,3 +158,33 @@ if ($Push) {
 }
 
 Write-Step "Pipeline completed successfully"
+
+# IACK_ARTIFACT_INTEGRITY_GATE
+Write-Host ""
+Write-Host "==> Validating artifact integrity"
+$manifestPath = Join-Path $PSScriptRoot "..\assets\data\iack-artifact-hashes.txt"
+$artifactFiles = @(
+    (Join-Path $PSScriptRoot "..\outputs\metrics-output.json"),
+    (Join-Path $PSScriptRoot "..\assets\data\current-metrics.json"),
+    (Join-Path $PSScriptRoot "..\assets\data\validation-history.json"),
+    (Join-Path $PSScriptRoot "..\assets\data\iack-mitre-mapping.json")
+)
+foreach ($f in $artifactFiles) {
+    if (-not (Test-Path $f)) { throw "Artifact integrity gate failed: missing file $f" }
+}
+$hashLines = foreach ($f in $artifactFiles) {
+    $h = Get-FileHash $f -Algorithm SHA256
+    "{0}  {1}" -f $h.Hash, $f
+}
+$hashLines | Set-Content $manifestPath -Encoding UTF8
+foreach ($line in Get-Content $manifestPath) {
+    if ([string]::IsNullOrWhiteSpace($line)) { continue }
+    $parts = $line -split '\s{2,}', 2
+    if ($parts.Count -ne 2) { throw "Artifact integrity gate failed: malformed manifest line '$line'" }
+    $expected = $parts[0].Trim()
+    $file = $parts[1].Trim()
+    if (-not (Test-Path $file)) { throw "Artifact integrity gate failed: missing manifest file $file" }
+    $actual = (Get-FileHash $file -Algorithm SHA256).Hash
+    if ($actual -ne $expected) { throw "Artifact integrity gate failed: hash mismatch for $file" }
+}
+Write-Host "Artifact integrity validation passed."

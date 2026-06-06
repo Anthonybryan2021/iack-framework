@@ -1,6 +1,8 @@
 import json
 import subprocess
+from pathlib import Path
 import sys
+import os
 
 
 def make_valid_assessment():
@@ -49,6 +51,10 @@ def make_valid_assessment():
 def test_cli_smoke_pipeline(tmp_path):
     input_file = tmp_path / "assessment.json"
     input_file.write_text(json.dumps(make_valid_assessment()), encoding="utf-8")
+
+    env = dict(os.environ)
+    repo_root = str(Path(__file__).resolve().parents[1])
+    env["PYTHONPATH"] = repo_root + (os.pathsep + env["PYTHONPATH"] if env.get("PYTHONPATH") else "")
 
     result_validator = subprocess.run(
         [sys.executable, "-m", "iack.validators.assessment_validator", str(input_file)],

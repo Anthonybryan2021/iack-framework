@@ -1,3 +1,5 @@
+import json
+from iack.mappings.csf_mapping import main
 from iack.mappings.csf_mapping import apply_csf_mapping
 
 
@@ -112,8 +114,6 @@ def test_apply_csf_mapping_uses_default_mapping_for_unknown_domain():
     assert unknown_metric["csf_code"] == "ID"
     assert "Default mapping used" in unknown_metric["rationale"]
 
-import json
-from iack.mappings.csf_mapping import main
 
 
 def make_input_assessment():
