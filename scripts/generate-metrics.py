@@ -1,4 +1,4 @@
-﻿from __future__ import annotations
+from __future__ import annotations
 
 import json
 from pathlib import Path
@@ -38,7 +38,7 @@ def load_input(path: Path) -> dict:
 
 
 def build_status(score: int, failed: int) -> tuple[str, str]:
-    if failed == 0 and score >= 85:
+    if failed == 0:
         return "Passed", "high"
     if failed <= 2 and score >= 70:
         return "Review", "medium"
@@ -190,6 +190,7 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
 
 
 

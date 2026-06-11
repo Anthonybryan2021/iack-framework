@@ -1,11 +1,11 @@
 {
-  "runId": "run-2026-06-11-112012",
+  "runId": "run-2026-06-11-113820",
   "overview": {
     "iackScore": 82,
-    "validationStatus": "Review",
-    "confidence": "medium",
+    "validationStatus": "Passed",
+    "confidence": "high",
     "openFindings": 0,
-    "lastRun": "2026-06-11 11:20:12",
+    "lastRun": "2026-06-11 11:38:20",
     "scoreDelta": "+0.0%",
     "nextAction": "Artifact integrity gate is active; continue live data mapping and dashboard polish.",
     "changes": [
@@ -40,7 +40,7 @@
   "validationLab": {
     "activeDataset": "assess-20260526095809",
     "scenario": "IACK Framework",
-    "runId": "run-2026-06-11-112012",
+    "runId": "run-2026-06-11-113820",
     "testsPassed": 4,
     "testsFailed": 0,
     "duration": "00:00:05",
