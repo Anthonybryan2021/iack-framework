@@ -1,32 +1,34 @@
 {
-  "runId": "run-2026-06-04-115616",
+  "runId": "run-2026-06-11-113820",
   "overview": {
     "iackScore": 82,
     "validationStatus": "Passed",
     "confidence": "high",
     "openFindings": 0,
-    "lastRun": "2026-06-04 11:56:16",
+    "lastRun": "2026-06-11 11:38:20",
     "scoreDelta": "+0.0%",
-    "nextAction": "Artifact integrity validation is enforced; review live data ingestion refinement.",
+    "nextAction": "Artifact integrity gate is active; continue live data mapping and dashboard polish.",
     "changes": [
       "Loaded live assessment input from JSON.",
-      "Generated normalized dashboard export from framework scoring model."
+      "Generated normalized cockpit export from the framework scoring model.",
+      "Mapped Overview, Validation Lab, Integrity, and Reports for dashboard consumption.",
+      "Artifact integrity gate detected and reflected in exported scoring."
     ],
     "pillars": [
       {
         "name": "Integrity",
         "score": 84,
-        "status": "good"
+        "status": "watch"
       },
       {
         "name": "Authenticity",
         "score": 84,
-        "status": "good"
+        "status": "watch"
       },
       {
         "name": "Confidentiality",
         "score": 81,
-        "status": "good"
+        "status": "watch"
       },
       {
         "name": "Key Management",
@@ -38,16 +40,17 @@
   "validationLab": {
     "activeDataset": "assess-20260526095809",
     "scenario": "IACK Framework",
-    "runId": "run-2026-06-04-115616",
+    "runId": "run-2026-06-11-113820",
     "testsPassed": 4,
     "testsFailed": 0,
     "duration": "00:00:05",
     "logLines": [
-      "[INFO] Python metrics exporter started",
+      "[INFO] IACK metrics exporter started",
       "[INFO] Loaded assessment input: assessment-input.json",
-      "[PASS] score_assessment executed",
+      "[INFO] Executing framework scoring model",
+      "[PASS] score_assessment completed",
       "[PASS] metrics-output.json written",
-      "[DONE] Export completed"
+      "[DONE] Export completed successfully"
     ]
   },
   "integrity": {
@@ -55,13 +58,13 @@
     "driftEvents": 0,
     "verifiedArtifacts": 4,
     "exceptions": 0,
-    "summary": "Integrity metrics exported from the framework model.",
+    "summary": "Integrity metrics were exported from the framework scoring model and prepared for cockpit review.",
     "issues": []
   },
   "reports": {
-    "executiveSummary": "Automated IACK export completed successfully.",
-    "technicalSummary": "Metrics were computed through score_assessment and serialized for PowerShell pipeline consumption.",
-    "researchSummary": "This output connects assessment input data to downstream reporting artifacts.",
+    "executiveSummary": "The IACK Cockpit MVP generated a validation-first security metrics snapshot for operational review.",
+    "technicalSummary": "Metrics were computed through score_assessment and serialized into a dashboard-ready JSON artifact.",
+    "researchSummary": "This export links structured assessment input to cockpit reporting, validation evidence, and downstream analysis.",
     "exports": [
       "Cockpit JSON artifact",
       "Validation history snapshot",
