@@ -1,0 +1,42 @@
+{
+  "framework": "IACK",
+  "rules_version": "v0.1",
+  "rules": [
+    {
+      "metric_id": "I1",
+      "metric_name": "Integrity Controls",
+      "attack_tactic": "Impact",
+      "attack_technique_id": "T1565",
+      "attack_technique_name": "Data Manipulation",
+      "default_recommendation": "Artifact integrity validation is enforced in the release workflow.",
+      "owner": "Felix"
+    },
+    {
+      "metric_id": "A1",
+      "metric_name": "Authenticity Controls",
+      "attack_tactic": "Credential Access",
+      "attack_technique_id": "T1078",
+      "attack_technique_name": "Valid Accounts",
+      "default_recommendation": "Strengthen identity validation, trust verification, and certificate checks.",
+      "owner": "Felix"
+    },
+    {
+      "metric_id": "C1",
+      "metric_name": "Confidentiality Controls",
+      "attack_tactic": "Exfiltration",
+      "attack_technique_id": "T1041",
+      "attack_technique_name": "Exfiltration Over C2 Channel",
+      "default_recommendation": "Tighten data handling, access restrictions, and egress monitoring.",
+      "owner": "Felix"
+    },
+    {
+      "metric_id": "K1",
+      "metric_name": "Key Management Controls",
+      "attack_tactic": "Credential Access",
+      "attack_technique_id": "T1552",
+      "attack_technique_name": "Unsecured Credentials",
+      "default_recommendation": "Improve secret storage, rotation, access control, and key exposure monitoring.",
+      "owner": "Felix"
+    }
+  ]
+}

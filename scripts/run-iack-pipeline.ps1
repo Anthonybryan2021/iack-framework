@@ -159,6 +159,17 @@ if ($Push) {
 
 Write-Step "Pipeline completed successfully"
 
+Write-Step "Generating MITRE ATT&CK mapping"
+$mitreScript = Join-Path $PSScriptRoot "generate-mitre-mapping.py"
+if (-not (Test-Path $mitreScript)) {
+    throw "Missing MITRE mapping generator: $mitreScript"
+}
+
+& python $mitreScript
+if ($LASTEXITCODE -ne 0) {
+    throw "MITRE mapping generation failed"
+}
+
 # IACK_ARTIFACT_INTEGRITY_GATE
 Write-Host ""
 Write-Host "==> Validating artifact integrity"
